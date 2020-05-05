@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Foodology</string>
+    <string name="search_question">What do you want to eat?</string>
+    <string-array name="Sort_by">
+        <item>Recommended</item>
+        <item>Price</item>
+        <item>Distance</item>
+        <item>Reviews</item>
+    </string-array>
+
+    <string-array name="Sort_by2">
+        <item>Recommended</item>
+        <item>Price</item>
+        <item>Distance</item>
+        <item>Reviews</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

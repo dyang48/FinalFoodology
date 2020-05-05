@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SubmitSurvey">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Based on your preferences, we recommend:"
+        android:textSize="28sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/junzi_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/junzi" />
+
+        <TextView
+            android:id="@+id/junzi_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/junzi_photo"
+            android:text="Junzi"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/junzi_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/junzi_name"
+            android:layout_toRightOf="@+id/junzi_photo"
+            android:text="Homestyle Chinese Kitchen" />
+
+        <RatingBar
+            android:id="@+id/junzi_rating_bar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/junzi_info"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/junzi_photo"
+            android:numStars="5"
+            android:rating="2.5"
+            android:stepSize="0.5" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/hulapoke_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/hulapoke" />
+
+        <TextView
+            android:id="@+id/hulapoke_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/hulapoke_photo"
+            android:text="Hula Poke"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/hulapoke_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hulapoke_name"
+            android:layout_toRightOf="@+id/hulapoke_photo"
+            android:text="Fresh is Best" />
+
+        <RatingBar
+            android:id="@+id/hulapoke_rating_bar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hulapoke_info"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/hulapoke_photo"
+            android:numStars="5"
+            android:rating="3.4"
+            android:stepSize="0.5" />
+
+    </RelativeLayout>
+
+</LinearLayout>
